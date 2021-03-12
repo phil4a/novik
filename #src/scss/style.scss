@@ -89,6 +89,46 @@ body {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
+.hello {
+}
+
+.hello-header {
+	//todo разобраться с лайнхейт + Pixel perfect!
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin: 40px 0px 55px 0px;
+	// .hello-header__item
+
+	&__item {
+	}
+}
+.hello-header-title {
+	max-width: 150px;
+	font-family: "Gilroy-Bold";
+	font-size: 47px;
+	line-height: 59/47 * 100%;
+}
+.hello-header-desc {
+	font-size: 18px;
+	line-height: 22/18 * 100%;
+	padding: 0px 0px 8px 0px;
+}
+.hello-header-vertical {
+	writing-mode: tb-rl;
+	transform: rotate(180deg);
+	font-size: 16px;
+	padding: 11px 0px 0px 0px;
+}
+.hello-header-vertical-bold {
+	font-family: "Gilroy-Bold";
+}
+.hello-footer {
+	// .hello-footer__img
+
+	&__img {
+	}
+}
 
 //===================================================================================================================================
 
