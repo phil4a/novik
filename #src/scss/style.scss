@@ -27,9 +27,8 @@ $minWidth: 320px;
 $maxWidth: 1152;
 $maxWidthContainer: 944;
 $md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$md2: 767.98;
+$md3: 479.98;
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -60,14 +59,12 @@ body {
 ._container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
+
 	@media (max-width: $md1+px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
 		max-width: none;
 		max-width: 750px;
 	}
-	@media (max-width: $md3+px) {
+	@media (max-width: $md2+px) {
 		max-width: none;
 		padding: 0 10px;
 	}
@@ -127,7 +124,39 @@ body {
 	// .hello-footer__img
 
 	&__img {
+		margin: 0px 0px 105px 0px;
 	}
+}
+
+.about {
+	background-color: #f6f6f6;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	// .about__title
+
+	&__title {
+		margin: 120px 0px 22px 0px;
+		font-family: "Gilroy-bold";
+		font-size: 34px;
+		line-height: 42/32 * 100%;
+		color: #070707;
+	}
+
+	// .about__text
+
+	&__text {
+		font-size: 18px;
+		line-height: 22/18 * 100%;
+		margin-bottom: 45px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+}
+.about-column {
+	margin-bottom: 110px;
+	max-width: 500px;
 }
 
 //===================================================================================================================================
