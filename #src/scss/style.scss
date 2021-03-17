@@ -34,8 +34,8 @@ $md3: 479.98;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
 body {
-	color: #21243d;
-	font-size: 14px;
+	color: #070707;
+	font-size: 18px;
 	&._lock {
 		overflow: hidden;
 	}
@@ -86,6 +86,12 @@ body {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
+.title {
+	font-family: "Gilroy-bold";
+	font-size: 34px;
+	text-align: center;
+	color: #070707;
+}
 .hello {
 }
 
@@ -140,7 +146,6 @@ body {
 		font-family: "Gilroy-bold";
 		font-size: 34px;
 		line-height: 42/32 * 100%;
-		color: #070707;
 	}
 
 	// .about__text
@@ -157,6 +162,140 @@ body {
 .about-column {
 	margin-bottom: 110px;
 	max-width: 500px;
+}
+
+.skills {
+	// .skills__title
+
+	&__title {
+		margin: 90px 0px 0px 0px;
+		font-family: "Gilroy-bold";
+		font-size: 34px;
+		text-align: center;
+	}
+
+	// .skills__text
+
+	&__text {
+		margin: 64px 0px 87px 0px;
+		text-align: center;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+	// .skills__item
+	&__column {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+	}
+
+	// .skills__icon
+
+	&__icon {
+		margin: 0px 0px 23px 0px;
+	}
+
+	// .skills__name
+
+	&__name {
+		flex: 1 1 auto;
+		font-family: "Gilroy-bold";
+		font-size: 14px;
+		line-height: 17/14 * 100%;
+		text-align: center;
+		color: #828282;
+		margin: 0px 0px 31px 0px;
+		max-width: 80px;
+	}
+
+	// .skills__rating
+
+	&__rating {
+		font-size: 34px;
+		letter-spacing: 6px;
+		display: flex;
+		margin-bottom: 115px;
+	}
+
+	// .skills__rating--4
+
+	&__rating--4 {
+		&::before {
+			content: "★★★★";
+			display: block;
+		}
+		&::after {
+			content: "★";
+			display: block;
+			color: #e5e5e5;
+		}
+	}
+	// .skills__rating--3
+	&__rating--3 {
+		&::before {
+			content: "★★★";
+			display: block;
+		}
+		&::after {
+			content: "★★";
+			display: block;
+			color: #e5e5e5;
+		}
+	}
+}
+
+.portfolio {
+	background-color: #f6f6f6;
+	// .portfolio__column
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	// .portfolio__title
+
+	&__title {
+		margin: 110px 0px 60px 0px;
+	}
+
+	// .portfolio__items
+
+	&__items {
+	}
+
+	// .portfolio__item
+
+	&__item {
+		margin: 0px 0px 100px 0px;
+	}
+
+	// .portfolio__image
+
+	&__image {
+		margin: 0px 0px 45px 0px;
+	}
+
+	// .portfolio__link
+
+	&__link {
+		text-decoration: underline;
+		color: #070707;
+		transition: color ease 0.3s;
+		text-align: center;
+		&:hover {
+			color: red;
+		}
+	}
 }
 
 //===================================================================================================================================
