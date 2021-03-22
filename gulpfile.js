@@ -161,7 +161,7 @@ gulp.task('svgSprite', function () {
 })
 
 gulp.task('deploy', function () {
-   return gulp.src("./" + project_folder + "/**/*")
+   return gulp.src(project_folder + "/**/*")
       .pipe(ghPages());
 });
 
