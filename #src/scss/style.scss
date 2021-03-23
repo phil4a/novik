@@ -66,7 +66,7 @@ body {
 	}
 	@media (max-width: $md2+px) {
 		max-width: none;
-		padding: 0 10px;
+		padding: 0 30px;
 	}
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
@@ -105,12 +105,23 @@ body {
 
 	&__item {
 	}
+	@media (max-width: $md2+px) {
+		flex-direction: column;
+		align-items: start;
+		margin: 50px 0px 35px 0px;
+		&__item-3 {
+			display: none;
+		}
+	}
 }
 .hello-header-title {
 	max-width: 150px;
 	font-family: "Gilroy-Bold";
 	font-size: 47px;
 	line-height: 59/47 * 100%;
+	@media (max-width: $md2+px) {
+		margin-bottom: 19px;
+	}
 }
 .hello-header-desc {
 	font-size: 18px;
@@ -122,6 +133,10 @@ body {
 	transform: rotate(180deg);
 	font-size: 16px;
 	padding: 11px 0px 0px 0px;
+	&__link {
+		text-decoration: none;
+		color: #070707;
+	}
 }
 .hello-header-vertical-bold {
 	font-family: "Gilroy-Bold";
@@ -130,7 +145,11 @@ body {
 	// .hello-footer__img
 
 	&__img {
+		max-width: 100%;
 		margin: 0px 0px 105px 0px;
+		@media (max-width: $md2+px) {
+			margin-bottom: 85px;
+		}
 	}
 }
 
@@ -146,6 +165,9 @@ body {
 		font-family: "Gilroy-bold";
 		font-size: 34px;
 		line-height: 42/32 * 100%;
+		@media (max-width: $md2+px) {
+			margin-top: 85px;
+		}
 	}
 
 	// .about__text
@@ -162,6 +184,9 @@ body {
 .about-column {
 	margin-bottom: 110px;
 	max-width: 500px;
+	@media (max-width: $md2+px) {
+		margin-bottom: 85px;
+	}
 }
 
 .skills {
@@ -179,16 +204,22 @@ body {
 	&__text {
 		margin: 64px 0px 87px 0px;
 		text-align: center;
+		@media (max-width: $md2+px) {
+			margin: 50px 0px 55px 0px;
+		}
 	}
 
 	&__items {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: $md2+px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 	// .skills__item
 	&__column {
 		display: flex;
-		justify-content: space-between;
 	}
 	&-item {
 		display: flex;
@@ -223,6 +254,9 @@ body {
 		letter-spacing: 6px;
 		display: flex;
 		margin-bottom: 115px;
+		@media (max-width: $md2+px) {
+			margin-bottom: 80px;
+		}
 	}
 
 	// .skills__rating--4
@@ -277,12 +311,19 @@ body {
 
 	&__item {
 		margin: 0px 0px 100px 0px;
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 78px 0px;
+		}
 	}
 
 	// .portfolio__image
 
 	&__image {
 		margin: 0px 0px 45px 0px;
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 35px 0px;
+			max-width: 100%;
+		}
 	}
 
 	// .portfolio__link
